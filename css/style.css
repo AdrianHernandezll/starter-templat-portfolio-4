@@ -54,10 +54,11 @@ img {
 .header .logo a {
   display: inline-block;
   text-align: center;
-  line-height: 40px;
+  line-height: 36px;
   height: 40px;
   width: 40px;
-  background-color: violet;
+  font-size: 24px;
+  border: 2px solid var(--rose-color);
 }
 .header .hamburguer-btn {
   height: 40px;
