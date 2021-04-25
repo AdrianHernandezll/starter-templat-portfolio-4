@@ -66,6 +66,9 @@ img {
 .justify-content-between {
   justify-content: space-between;
 }
+.shadow-1 {
+  box-shadow: var(--shadow-one);
+}
 
 /*================HEADER==================*/
 
@@ -95,7 +98,10 @@ img {
   width: 40px;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
   justify-content: center;
+  transition: all 0.3s ease;
 }
 .header .hamburguer-btn span {
   display: block;
