@@ -1,5 +1,31 @@
-/* ===========ESTILOS GLOBALES================= */
+/* =======VARIABLES======= */
+:root {
+  --skin--rose--: #fb839e;
+  --skin--gold--: #ec9412;
+  --skin--green--: #1fc586;
+  --skin--cyan--: #2eb1ed;
+  --skin--red--: #cc3a3b;
 
+  --bg--black-900: #000000;
+  --bg--black-100: #dddddd;
+  --bg--black-50: #eff0f4;
+  --text-black-900: #000000;
+  --text-black-700: #555555;
+  --text-black-600: #666666;
+  --text-black-300: #bbbbbb;
+
+  --shadow-one: 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+  --shadow-two: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
+  --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+}
+/*=========Fuentes========== */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+/* ===========ESTILOS GLOBALES================= */
+*:not(i) {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+}
 * {
   padding: 0;
   margin: 0;
@@ -15,6 +41,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   overflow-x: hidden;
+  background-color: var(--bg--black-50);
 }
 a {
   text-decoration: none;
@@ -43,7 +70,6 @@ img {
 /*================HEADER==================*/
 
 .header {
-  background-color: gray;
   padding: 20px 15px;
   position: absolute;
   width: 100%;
@@ -58,10 +84,38 @@ img {
   height: 40px;
   width: 40px;
   font-size: 24px;
-  border: 2px solid var(--rose-color);
+  color: var(--skin--rose--);
+  border-radius: 50%;
+  border: 2px solid var(--skin--rose--);
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .header .hamburguer-btn {
   height: 40px;
   width: 40px;
-  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .hamburguer-btn span {
+  display: block;
+  height: 2px;
+  width: 16px;
+  background-color: var(--bg--black-900);
+  position: relative;
+}
+.header .hamburguer-btn span:before,
+.header .hamburguer-btn span:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg--black-900);
+}
+.header .hamburguer-btn span:before {
+  top: -6px;
+}
+.header .hamburguer-btn span:after {
+  top: 6px;
 }
