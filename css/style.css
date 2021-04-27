@@ -727,21 +727,19 @@ img {
   margin-bottom: 40px;
 }
 .portfolio-section .portfolio-filter {
-  background-color: red;
   padding: 0 15px;
   flex: 0 0 100%;
   max-width: 100%;
   text-align: center;
 }
 .portfolio-section .filter-item {
-  border: 1px solid red;
   display: inline-block;
   margin: 0 5px 10px;
-  padding: 0 5px 10px;
+  padding: 5px 10px;
   border-radius: 30px;
   cursor: pointer;
   font-weight: 500;
-  color: var(--skin--rose--);
+  color: var(--text-black-600);
   text-transform: capitalize;
   font-size: 16px;
   transition: all 0.4s ease;
@@ -751,4 +749,37 @@ img {
 }
 .portfolio-section .filter-item.active {
   color: var(--skin--rose--);
+}
+.portfolio-section .portfolio-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-section .portfolio-item-inner {
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+.portfolio-section .portfolio-item-img img {
+  border-radius: 5px;
+  width: 100%;
+}
+.portfolio-section .portfolio-item-img .view-project {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--skin--rose--);
+  transition: all 0.4s ease;
+}
+.portfolio-section .portfolio-item-details {
+  display: none;
+}
+.portfolio-section .portfolio-item-inner p {
+  font-size: 16px;
+  margin: 10px 0 0;
+  color: var(--text-black-600);
+  text-transform: capitalize;
 }
