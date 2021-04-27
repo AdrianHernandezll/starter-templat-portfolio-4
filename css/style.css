@@ -717,3 +717,38 @@ img {
   margin: 0;
   line-height: 26px;
 }
+
+/*================SECCION PORTFOLIO=================*/
+.portfolio-section {
+  padding: 80px 0 80px;
+  min-height: 100vh;
+}
+.portfolio-section .section-title {
+  margin-bottom: 40px;
+}
+.portfolio-section .portfolio-filter {
+  background-color: red;
+  padding: 0 15px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+}
+.portfolio-section .filter-item {
+  border: 1px solid red;
+  display: inline-block;
+  margin: 0 5px 10px;
+  padding: 0 5px 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--skin--rose--);
+  text-transform: capitalize;
+  font-size: 16px;
+  transition: all 0.4s ease;
+}
+.portfolio-section .filter-item:hover:not(.active) {
+  opacity: 0.6;
+}
+.portfolio-section .filter-item.active {
+  color: var(--skin--rose--);
+}
