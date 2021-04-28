@@ -44,6 +44,9 @@ body {
   overflow-x: hidden;
   background-color: var(--bg--black-50);
 }
+body.stop-scrolling {
+  overflow-y: hidden;
+}
 a {
   text-decoration: none;
 }
@@ -824,6 +827,11 @@ img {
   overflow-y: auto;
   opacity: 0;
   visibility: hidden;
+  transition: all 0.4s ease;
+}
+.portfolio-popup.open {
+  visibility: visible;
+  opacity: 1;
 }
 .portfolio-popup .pp-details {
   max-width: 1350px;
