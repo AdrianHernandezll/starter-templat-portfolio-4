@@ -1,4 +1,4 @@
-/*============SECCION TABS=============== */
+/*=====================SECCION TABS======================== */
 (() => {
     const aboutSection = document.querySelector(".about-section"),
     tabsContainer = document.querySelector(".about-tabs");
@@ -17,4 +17,51 @@
 
         }   
     })
+})();
+
+
+/*==================== PORTFOLIO FILTROS Y POPUPS=========== */
+
+(()=>{
+
+      const filterContainer = document.querySelector(".portfolio-filter"),
+      portfolioItemsContainer = document.querySelector(".portfolio-items"),
+      portfolioItems = document.querySelectorAll(".portfolio-item"),
+      popup = document.querySelector(".portfolio-popup"),
+      prevBtn = popup.querySelector(".portfolio-popup"),
+      nextBtn = popup.querySelector(".pp-next"),
+      closeBtn = popup.querySelector(".pp-close"),
+      projectDetailsContainer = popup.querySelector(".pp-details"),
+      projectDetailsBtn = popup.querySelector(".pp-project-details-btn");
+      let itemIndex, slideIndex, screenshots;
+
+      /*Filtros portfolio items */
+      filterContainer.addEventListener("click",(event)=>{
+        if(event.target.classList.contains("filter-item") && 
+        !event.target.classList.contains("active")){
+          /*Desactivar existente active 'Filter-item' */
+          filterContainer.querySelector(".active").classList.remove("shadow-1","active");
+          /*Activar nuevo filtro Item*/
+          event.target.classList.add("active","shadow-1");
+          const target = event.target.getAttribute("data-target");
+          portfolioItems.forEach((item) =>{
+            if(target === item.getAttribute("data-category")|| target === 'all'){
+              item.classList.remove("hide");
+              item.classList.add("show");
+            }
+            else{
+              item.classList.remove("show");
+              item.classList.add("hide");
+            }   
+          })
+        }    
+      })
+
+      portfolioItemsContainer.addEventListener("click",(event) =>{
+        if(event.target.closest(".portfolio-item-inner")){
+          const portfolioItem = event.target.closest(".portfolio-item-inner").parentElement;
+          //el portafolioItem Index
+          itemIndex = Array.from(portfolioItem.parentElement.children).indexOf(portfolioItem);
+        }
+      })
 })();
