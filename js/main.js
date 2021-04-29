@@ -20,7 +20,7 @@
 })();
 
 function bodyScrollingToggle(){
-  document.body.classList.toggle("stop-scrolling");
+  document.body.classList.toggle("hidden-scrolling");
 }
 
 
@@ -80,11 +80,14 @@ function bodyScrollingToggle(){
           slideIndex = 0;
           popupToggle();
           popupSlideshow();
-          // popupDetails();
+          popupDetails();
         }
       })
       closeBtn.addEventListener("click", ()=>{
         popupToggle()
+        if(projectDetailsContainer.classList.contains("active")){
+          popupDetailsToggle();
+        }
       })
 
       function popupToggle(){
@@ -126,8 +129,28 @@ function bodyScrollingToggle(){
         }
         popupSlideshow();
         console.log("slideIndex:" + slideIndex);
-
       })
+
+      function popupDetails(){
+        //if PORTFOLIO-ITEM-DETAILS NO EXISTE
+        if(!portfolioItems[itemIndex].querySelector(".portfolio-item-details")){
+          projectDetailsBtn.style.display="none";
+          return; //Termina Funcion Ejecutada
+        }
+        projectDetailsBtn.style.display="block";
+        //  el Proyeto Detalles 
+        const details = portfolioItems[itemIndex].querySelector(".portfolio-item-details").innerHTML;
+        popup.querySelector(".pp-project-details").innerHTML = details;
+        //EL PROYECTO TITLE
+        const title = portfolioItems[itemIndex].querySelector(".portfolio-item-title").innerHTML;
+        //EL PROYECTO TITLE SET
+        popup.querySelector(".pp-title h2").innerHTML = title;
+        //EL PROYECTO CATEGORIA
+        const category = portfolioItems[itemIndex].getAttribute("data-category");
+        popup.querySelector(".pp-project-category").innerHTML = category.split("-").join(" ");
+
+
+      }
 
       projectDetailsBtn.addEventListener("click",() =>{
         popupDetailsToggle()
