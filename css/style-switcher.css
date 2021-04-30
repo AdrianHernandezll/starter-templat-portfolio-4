@@ -7,6 +7,10 @@
   z-index: 101;
   border-radius: 5px;
   transition: all 0.4s ease;
+  transform: translateX(100%);
+}
+.style-switcher.open {
+  transform: translateX(-15px);
 }
 
 .style-switcher .s-icon {
@@ -29,7 +33,7 @@
   border-radius: 50%;
 }
 
-.style-switcher .style-toggler {
+.style-switcher .style-switcher-toggler {
   top: 0;
 }
 .style-switcher .day-night {
@@ -55,17 +59,17 @@
   cursor: pointer;
 }
 .style-switcher .colors .color-1 {
-  background-color: var(--skin--rose--);
+  background-color: #fb839e;
 }
 .style-switcher .colors .color-2 {
-  background-color: var(--skin--gold--);
+  background-color: #ec9412;
 }
 .style-switcher .colors .color-3 {
-  background-color: var(--skin--green--);
+  background-color: #1fc586;
 }
 .style-switcher .colors .color-4 {
-  background-color: var(--skin--cyan--);
+  background-color: #2eb1ed;
 }
 .style-switcher .colors .color-5 {
-  background-color: var(--skin--red--);
+  background-color: #cc3a3b;
 }
