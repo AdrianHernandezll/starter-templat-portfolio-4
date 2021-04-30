@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
     <!-- main css -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Color Default -->
+    <link rel="stylesheet" href="css/skins/color-1.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-switcher.css" />
   </head>
   <body>
     <!-- Comienzo header -->
@@ -29,20 +32,39 @@
       <div class="close-nav-menu shadow-1 hover-shadow">&times;</div>
       <div class="nav-menu-inner">
         <ul>
-          <li><a href="" class="inner-shadow active">Inicio</a></li>
-          <li><a href="" class="shadow-1 hover-shadow">Sobre Mi</a></li>
-          <li><a href="" class="shadow-1 hover-shadow">Servicios</a></li>
-          <li><a href="" class="shadow-1 hover-shadow">Portfolio</a></li>
-          <li><a href="" class="shadow-1 hover-shadow">Contacto</a></li>
+          <li>
+            <a href="#home" class="link-item inner-shadow active">Inicio</a>
+          </li>
+          <li>
+            <a href="#about" class="link-item shadow-1 hover-shadow"
+              >Sobre Mi</a
+            >
+          </li>
+          <li>
+            <a href="#services" class="link-item shadow-1 hover-shadow"
+              >Servicios</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio" class="link-item shadow-1 hover-shadow"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="link-item shadow-1 hover-shadow"
+              >Contacto</a
+            >
+          </li>
         </ul>
       </div>
       <!-- Copyright -->
       <p class="copyright-text">&copy; 2021 Adrian Hernandez</p>
     </nav>
+    <div class="fade-out-effect"></div>
     <!-- Navbar Menu Fin -->
 
     <!-- Seccion de Home Inicio -->
-    <section class="home-section section">
+    <section class="home-section section active" id="home">
       <!-- Efecto Wrap Inicio -->
       <div class="effect-wrap">
         <div class="effect effect-1"></div>
@@ -98,7 +120,9 @@
             <p>Hola!</p>
             <h2>I'm Adrian</h2>
             <h1>Web Developer Full Stack</h1>
-            <a href="#" class="btn-1 shadow-1 hover-shadow">Más sobre mi</a>
+            <a href="#about" class="link-item btn-1 shadow-1 hover-shadow"
+              >Más sobre mi</a
+            >
           </div>
           <div class="home-img">
             <div class="img-box inner-shadow">
@@ -110,7 +134,7 @@
     </section>
     <!-- Seccion de Home Fin -->
     <!-- Seccion Sobre Mi Inicio -->
-    <section class="about-section section">
+    <section class="about-section section" id="about">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -160,7 +184,9 @@
             <a href="cv.pdf" class="btn-1 shadow-1 hover-shadow"
               >Descargar CV</a
             >
-            <a href="#" class="btn-1 shadow-1 hover-shadow">Contactame</a>
+            <a href="#" class="link-item btn-1 shadow-1 hover-shadow"
+              >Contactame</a
+            >
           </div>
         </div>
         <!--Acerca de mi TABS inicio  -->
@@ -358,7 +384,7 @@
     </section>
     <!-- Seccion Sobre Mi Fin -->
     <!-- Seccion de Servicios Inicio -->
-    <section class="service-section">
+    <section class="service-section section" id="services">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -456,7 +482,7 @@
     <!-- Seccion de Servicios Fin -->
 
     <!-- Seccion de Portafolio Inicio -->
-    <section class="portfolio-section section">
+    <section class="portfolio-section section" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -807,6 +833,92 @@
       </div>
     </section>
     <!-- Seccion de Portafolio Fin -->
+    <!-- Seccion Contacto Inicio-->
+    <section class="contact-section section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-heading="contacto">Ponte en contacto</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Contacto Item Inicio -->
+          <div class="contact-item">
+            <div class="contact-item-inner shadow-1">
+              <i class="fas fa-phone"></i>
+              <span>Telefono</span>
+              <p>+549 154 390 938</p>
+            </div>
+          </div>
+          <!-- Contacto Item Fin -->
+          <!-- Contacto Item Inicio -->
+          <div class="contact-item">
+            <div class="contact-item-inner shadow-1">
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+              <p>daniz08@icloud.com</p>
+            </div>
+          </div>
+          <!-- Contacto Item Fin -->
+          <!-- Contacto Item Inicio -->
+          <div class="contact-item">
+            <div class="contact-item-inner shadow-1">
+              <i class="fas fa-map-marked-alt"></i>
+              <span>Ubicación</span>
+              <p>Santa Fe,La capital</p>
+            </div>
+          </div>
+          <!-- Contacto Item Fin -->
+        </div>
+        <div class="row">
+          <div class="contact-form">
+            <form>
+              <div class="row">
+                <div class="w-50">
+                  <div class="input-group shadow-1 hover-shadow">
+                    <input
+                      type="text"
+                      placeholder="Nombre"
+                      class="input-control"
+                    />
+                  </div>
+                  <div class="input-group shadow-1 hover-shadow">
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      class="input-control"
+                    />
+                  </div>
+                  <div class="input-group shadow-1 hover-shadow">
+                    <input
+                      type="text"
+                      placeholder="Asunto"
+                      class="input-control"
+                    />
+                  </div>
+                </div>
+                <div class="w-50">
+                  <div class="input-group shadow-1 hover-shadow">
+                    <textarea
+                      class="input-control"
+                      placeholder="Mensaje"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="submit-btn">
+                  <button type="submit" class="btn-1 shadow-1 hover-shadow">
+                    Enviar Mensaje
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seccion Contacto Inicio-->
 
     <!-- Portafolio popup Inicio -->
     <div class="pp portfolio-popup">
@@ -872,6 +984,25 @@
       </div>
     </div>
     <!-- Portafolio popup Fin -->
+
+    <!-- Estilos Switch Inicio -->
+    <div class="style-switcher shadow-1">
+      <div class="style-toggler s-icon shadow-1 hover-shadow">
+        <i class="fas fa-cog fa-spin"></i>
+      </div>
+      <div class="day-night s-icon shadow-1 hover-shadow">
+        <i class="fas fa-moon"></i>
+      </div>
+      <h4>Color Tema</h4>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+      </div>
+    </div>
+    <!-- Estilos Switch Fin -->
 
     <!-- main js -->
     <script src="js/main.js"></script>
