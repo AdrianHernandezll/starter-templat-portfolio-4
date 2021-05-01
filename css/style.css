@@ -2,12 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
 /* =======VARIABLES======= */
 :root {
-  --skin--rose--: #fb839e;
-  --skin--gold--: #ec9412;
-  --skin--green--: #1fc586;
-  --skin--cyan--: #2eb1ed;
-  --skin--red--: #cc3a3b;
-
   --bg--black-900: #000000;
   --bg--black-100: #dddddd;
   --bg--black-50: #eff0f4;
@@ -21,6 +15,8 @@
   --shadow-two: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
   --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
   --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
+
+  --skin--rose--: #fb839e;
 }
 /* ==========Custom CSS ===========*/
 body.dark {
@@ -174,6 +170,7 @@ img {
   border-left: 30px solid #06d79c;
   left: 30%;
   top: 20%;
+  animation: spin 12s linear infinite;
 }
 .effect-4::before {
   content: "";
@@ -183,7 +180,7 @@ img {
   opacity: 0.5;
   left: -35px;
   top: -25px;
-  animation: spin 15s linear infinite;
+  animation: spin 12s linear infinite;
 }
 .effect-5 {
   height: 50px;
@@ -194,7 +191,7 @@ img {
   justify-content: space-between;
   border-radius: 50%;
   overflow: hidden;
-  animation: spin 15s linear infinite;
+  animation: spin 13s linear infinite;
 }
 .effect-5 div {
   width: 1px;

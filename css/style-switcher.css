@@ -58,18 +58,18 @@
   border-radius: 50%;
   cursor: pointer;
 }
-.style-switcher .colors .color-1 {
+.style-switcher .color-1 {
   background-color: #fb839e;
 }
-.style-switcher .colors .color-2 {
+.style-switcher .color-2 {
   background-color: #ec9412;
 }
-.style-switcher .colors .color-3 {
+.style-switcher .color-3 {
   background-color: #1fc586;
 }
-.style-switcher .colors .color-4 {
+.style-switcher .color-4 {
   background-color: #2eb1ed;
 }
-.style-switcher .colors .color-5 {
+.style-switcher .color-5 {
   background-color: #cc3a3b;
 }
