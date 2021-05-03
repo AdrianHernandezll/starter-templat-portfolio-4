@@ -20,10 +20,10 @@ const alternateStyles = document.querySelectorAll(".alternate-style");
 function setActiveStyle(color){
     alternateStyles.forEach((style) =>{
         if(color === style.getAttribute("title")){
-            style.removeAttribute("disable");
+            style.removeAttribute("disabled");
         }
         else{
-            style.setAttribute("disable","true");
+            style.setAttribute("disabled","true");
         }
     })
 
