@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.curriculum {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  margin: 50px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.curriculum .resumen__left {
+  position: relative;
+  background-color: #003147;
+  padding: 40px;
+}
+.profile__left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+.profile__left .img__left {
+  margin: 0 auto;
+}
+.profile__left .img__left img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.profile__left h2 {
+  color: white;
+  font-size: 22px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.profile__left h2 span {
+  font-size: 20px;
+  font-weight: 400;
+}
+.curriculum .resumen__right {
+  position: relative;
+  background: #fff;
+  padding: 50px;
+}
+.contact__info {
+  padding: 30px;
+}
+.contact__info ul {
+  position: relative;
+}
+.contact__info ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.contact__info ul li span {
+  color: #fff;
+  font-weight: 400;
+}
+.contact__info ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: cadetblue;
+}
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contact__info.education li {
+  margin-bottom: 15px;
+}
+.contact__info.education h5 {
+  color: #03a9f4;
+  font-weight: 500;
+}
+.contact__info.education h4:nth-child(2) {
+  color: #fff;
+  font-weight: 500;
+}
+.contact__info.education h4 {
+  color: #fff;
+  font-weight: 300;
+}
+.about {
+  margin-bottom: 50px;
+}
+.about:last-child {
+  margin-bottom: 0;
+}
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+p {
+  color: #333;
+}
+
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+.skills .box {
+  position: relative;
+  width: 100%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.skills .box h4 {
+  text-transform: uppercase;
+  color: #848c99;
+  font-weight: 500;
+}
+.skills .box .percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+.skills .box .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
